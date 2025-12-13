@@ -33,6 +33,7 @@
         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
         line-height: 1.65;
         font-size: 16px;
+        overflow-x: hidden;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -42,6 +43,18 @@
         max-width: 1120px;
         margin: 0 auto;
         padding: 52px 22px 44px;
+      }
+
+      @media (max-width: 940px) {
+        .container {
+          padding: 36px 18px 36px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 28px 14px 32px;
+        }
       }
 
       .layout {
@@ -87,6 +100,13 @@
         margin-left: -10px;
       }
 
+      @media (max-width: 480px) {
+        .brand {
+          font-size: 30px;
+          margin-left: 0;
+        }
+      }
+
       .kicker {
         font-size: 12px;
         letter-spacing: 0.22em;
@@ -105,9 +125,15 @@
         margin-left: -72px;
       }
 
+      @media (max-width: 940px) {
+        .logo {
+          margin-left: 0;
+        }
+      }
+
       @media (max-width: 480px) {
         .logo {
-          margin-left: -12px;
+          margin-left: 0;
         }
       }
 
@@ -162,6 +188,25 @@
         position: relative;
         padding-left: 14px;
         border-left: 1px solid var(--line);
+      }
+
+      @media (max-width: 940px) {
+        .timeline-nav {
+          border-left: 0;
+          padding-left: 0;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px 16px;
+        }
+        .timeline-nav a {
+          grid-template-columns: 1fr;
+          gap: 0;
+          padding: 4px 0;
+          font-size: 12px;
+        }
+        .dot {
+          display: none;
+        }
       }
 
       .timeline-nav a {
@@ -257,6 +302,25 @@
         margin: 14px 0;
         border-top: 1px solid var(--line);
         border-bottom: 1px solid var(--line);
+      }
+
+      @media (max-width: 640px) {
+        table {
+          display: block;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          min-width: 680px;
+        }
+        th,
+        td {
+          white-space: normal;
+        }
+      }
+
+      @media (max-width: 640px) {
+        pre {
+          font-size: 13px;
+        }
       }
 
       th,
