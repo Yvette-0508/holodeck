@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery — Holodeck</title>
+    <meta name="description" content="Generated samples from the Flux + Mochi video generation pipeline." />
+    <style>
+      :root {
+        --bg: #f4efe6;
+        --paper: #ffffff;
+        --text: #111111;
+        --muted: rgba(17, 17, 17, 0.72);
+        --faint: rgba(17, 17, 17, 0.46);
+        --line: rgba(17, 17, 17, 0.16);
+        --line-soft: rgba(17, 17, 17, 0.1);
+        --accent: #111111;
+      }
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        background: var(--bg);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+        line-height: 1.65;
+        font-size: 16px;
+        overflow-x: hidden;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 52px 22px 44px;
+      }
+
+      @media (max-width: 940px) {
+        .container {
+          padding: 36px 18px 36px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 28px 14px 32px;
+        }
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+
+      .back-link:hover {
+        color: var(--text);
+      }
+
+      .brand {
+        font-size: 36px;
+        line-height: 1.05;
+        letter-spacing: 0.08em;
+        text-transform: lowercase;
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 480px) {
+        .brand {
+          font-size: 30px;
+        }
+      }
+
+      h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin: 0 0 8px;
+        letter-spacing: -0.02em;
+      }
+
+      .subtitle {
+        margin: 0 0 32px;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .gallery-item {
+        aspect-ratio: 1;
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid var(--line-soft);
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .gallery-item .placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--faint);
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      footer {
+        margin-top: 48px;
+        color: var(--faint);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+
+      <div class="brand">holodeck</div>
+      <h1>Gallery</h1>
+      <p class="subtitle">Generated samples from the Flux + Mochi pipeline</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="placeholder">Image 1<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 2<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 3<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 4<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 5<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 6<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 7<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 8<br><small>Add your image here</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder">Image 9<br><small>Add your image here</small></div>
+        </div>
+      </div>
+
+      <footer>
+        Holodeck Gallery • Flux + Mochi Pipeline
+      </footer>
+    </div>
+  </body>
+</html>
